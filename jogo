@@ -42,3 +42,5 @@ while letraErrada <= 5:
       if letraErrada==4:
             #exibe o desenho
         print('\n\n|-------\n|      O\n|\n|')
+    
+    letraErrada+=1
