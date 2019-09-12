@@ -1,0 +1,4 @@
+print("\n@#####################@")
+print("@### JOGO DA FORCA ###@")
+print("@#####################@")
+palavra = input("\n\nDigite uma palavra: ")
