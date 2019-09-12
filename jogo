@@ -4,3 +4,6 @@ print("@#####################@")
 palavra = input("\n\nDigite uma palavra: ")
 
 print("__ "*len(palavra))
+
+
+print('\n\n|-------\n|      |\n|\n|')
