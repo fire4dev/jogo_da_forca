@@ -15,8 +15,8 @@ letrasNaPalavra = [palavra[i:i+separa] for i in range(0, len(palavra), separa)]
 letraErrada = 0
 while letraErrada < 5:
   letraEscolhida = input("Informe uma letra:")
-  for contLetter in range(len(palavra))
-    if letraEscolhida==letrasNaPalavra[contLetter]:
+  for contLetter in range(len(palavra)):
+    if letraEscolhida!=letrasNaPalavra[contLetter]:
       letraErrada+=1
       print("\n\nLETRA ERRADA!!\n\n")
           #exibe o desenho
