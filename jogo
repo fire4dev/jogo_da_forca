@@ -1,4 +1,3 @@
-  
     #menu
 
 print("\n@#####################@")
@@ -8,11 +7,17 @@ palavra = input("\n\nDigite uma palavra: ")
     #exibe as linhas de acordo com a quantidade de letras
 print()
 print("__ "*len(palavra))
+print("\n\n")
     #separa as letras
 separa = 1
-letrasNaPalavra = [palavra[i:i+separa] for i in range(0, len(palavra)-3, separa)]
+letrasNaPalavra = [palavra[i:i+separa] for i in range(0, len(palavra), separa)]
 
-letraEscolhida = input("Informe uma letra:")
-
-    #exibe o desenho
-print('\n\n|-------\n|      |\n|\n|')
+letraErrada = 0
+while letraErrada < 5:
+  letraEscolhida = input("Informe uma letra:")
+  for contLetter in range(len(palavra))
+    if letraEscolhida==letrasNaPalavra[contLetter]:
+      letraErrada+=1
+      print("\n\nLETRA ERRADA!!\n\n")
+          #exibe o desenho
+      print('\n\n|-------\n|      O\n|\n|')
