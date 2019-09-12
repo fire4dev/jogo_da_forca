@@ -1,3 +1,7 @@
+#######@ BY: Lucas AND Cleiton
+######@@ DATE: 12/09/2019
+#####@@@ PYTHON 3
+####@@@@ links: https://wiki.python.org.br/ManipulandoStringsComPython    
     #menu
 
 print("\n@#####################@")
@@ -11,13 +15,30 @@ print("\n\n")
     #separa as letras
 separa = 1
 letrasNaPalavra = [palavra[i:i+separa] for i in range(0, len(palavra), separa)]
+print("\n"*100)
 
 letraErrada = 0
-while letraErrada < 5:
+while letraErrada <= 5:
   letraEscolhida = input("Informe uma letra:")
+      #conta as letras
   for contLetter in range(len(palavra)):
-    if letraEscolhida!=letrasNaPalavra[contLetter]:
-      letraErrada+=1
+        #verifica se está 
+    if letraEscolhida==letrasNaPalavra[contLetter]:
+      print("letra correta!")
+    else:
       print("\n\nLETRA ERRADA!!\n\n")
-          #exibe o desenho
-      print('\n\n|-------\n|      O\n|\n|')
+      if letraErrada==0:
+            #exibe o desenho
+        print('\n\n|-------\n|      O\n|\n|')
+      if letraErrada==1:
+            #exibe o desenho
+        print('\n\n|-------\n|      O\n|     /\n|')
+      if letraErrada==2:
+            #exibe o desenho
+        print('\n\n|-------\n|      O\n|\n|')
+      if letraErrada==3:
+            #exibe o desenho
+        print('\n\n|-------\n|      O\n|\n|')
+      if letraErrada==4:
+            #exibe o desenho
+        print('\n\n|-------\n|      O\n|\n|')
