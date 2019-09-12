@@ -1,6 +1,18 @@
+  
+    #menu
+
 print("\n@#####################@")
 print("@### JOGO DA FORCA ###@")
 print("@#####################@")
 palavra = input("\n\nDigite uma palavra: ")
-
+    #exibe as linhas de acordo com a quantidade de letras
+print()
 print("__ "*len(palavra))
+    #separa as letras
+separa = 1
+letrasNaPalavra = [palavra[i:i+separa] for i in range(0, len(palavra)-3, separa)]
+
+letraEscolhida = input("Informe uma letra:")
+
+    #exibe o desenho
+print('\n\n|-------\n|      |\n|\n|')
